@@ -1,6 +1,11 @@
 [package]
 name = "facet-actix"
 version = "0.1.0"
+authors = ["Tamo <tamo@meilisearch.com>"]
+license = "MIT OR Apache-2.0"
+description = "Glue crate between actix-web and facet"
+repository = "https://github.com/irevoire/facet-actix"
+readme = "README.md"
 edition = "2024"
 
 [workspace]
