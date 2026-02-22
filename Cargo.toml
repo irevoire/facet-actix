@@ -1,0 +1,13 @@
+[package]
+name = "facet-actix"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+members = ["examples/*"]
+
+[dependencies]
+actix-web = "4.13.0"
+facet = "0.43.2"
+facet-format = "0.43.2"
+facet-json = "0.43.2"

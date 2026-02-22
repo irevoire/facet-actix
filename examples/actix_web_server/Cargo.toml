@@ -1,0 +1,19 @@
+[package]
+name = "actix_web_server"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-http = { version = "3.11.1", default-features = false, features = ["compress-brotli", "compress-gzip", "rustls"] }
+actix-web = { version = "4.11.0", default-features = false, features = ["macros", "compress-brotli", "compress-gzip", "cookies", "rustls"] }
+anyhow = "1.0.99"
+env_logger = "0.11.8"
+facet = "0.43.2"
+facet-json = "0.43.2"
+facet-actix = { path = "../.." }
+futures = "0.3.31"
+futures-util = "0.3.31"
+log = "0.4.28"
