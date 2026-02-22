@@ -5,6 +5,7 @@ authors = ["Tamo <tamo@meilisearch.com>"]
 license = "MIT OR Apache-2.0"
 description = "Glue crate between actix-web and facet"
 repository = "https://github.com/irevoire/facet-actix"
+documentation = "https://docs.rs/facet-actix"
 readme = "README.md"
 edition = "2024"
 
