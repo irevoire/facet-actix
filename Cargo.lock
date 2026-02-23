@@ -581,6 +581,7 @@ dependencies = [
  "facet",
  "facet-format",
  "facet-json",
+ "facet-urlencoded",
 ]
 
 [[package]]
@@ -702,6 +703,18 @@ checksum = "e658ff4822b1ece03ab0cfeee867d41e7483b593be63345468806994d6fcd942"
 dependencies = [
  "facet-core",
  "facet-reflect",
+]
+
+[[package]]
+name = "facet-urlencoded"
+version = "0.43.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6e29dc21f3b307c87a900126fd3faea3ad5ac28f826c3a9039f69fa56a8f6240"
+dependencies = [
+ "facet-core",
+ "facet-reflect",
+ "form_urlencoded",
+ "log",
 ]
 
 [[package]]
