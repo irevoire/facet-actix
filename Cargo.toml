@@ -14,7 +14,7 @@ members = ["examples/*"]
 
 [dependencies]
 actix-web = "4.13.0"
-facet = "0.43.2"
-facet-format = "0.43.2"
-facet-json = "0.43.2"
-facet-urlencoded = "0.43.2"
+facet = {git = "https://github.com/facet-rs/facet", branch = "main" }
+facet-format = {git = "https://github.com/facet-rs/facet", branch = "main" }
+facet-json = {git = "https://github.com/facet-rs/facet", branch = "main" }
+facet-urlencoded = {git = "https://github.com/facet-rs/facet", branch = "main" }

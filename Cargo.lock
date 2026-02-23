@@ -52,7 +52,7 @@ dependencies = [
  "pin-project-lite",
  "rand",
  "sha1",
- "smallvec",
+ "smallvec 1.15.1",
  "tokio",
  "tokio-util",
  "tracing",
@@ -187,7 +187,7 @@ dependencies = [
  "serde",
  "serde_json",
  "serde_urlencoded",
- "smallvec",
+ "smallvec 1.15.1",
  "socket2 0.6.2",
  "time",
  "tracing",
@@ -565,8 +565,7 @@ dependencies = [
 [[package]]
 name = "facet"
 version = "0.43.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e338357cf598728b41e45744d024bdc063338214992361766928a1421bd7541d"
+source = "git+https://github.com/facet-rs/facet?branch=main#48914ef0c7a7f6b0425cbc0cf728a3251976e0fc"
 dependencies = [
  "autocfg",
  "facet-core",
@@ -587,8 +586,7 @@ dependencies = [
 [[package]]
 name = "facet-core"
 version = "0.43.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a63e0ade4c53b40220614b8fc2a0a0ce21975941b553081521a195c848b2e9c2"
+source = "git+https://github.com/facet-rs/facet?branch=main#48914ef0c7a7f6b0425cbc0cf728a3251976e0fc"
 dependencies = [
  "autocfg",
  "const-fnv1a-hash",
@@ -599,8 +597,7 @@ dependencies = [
 [[package]]
 name = "facet-dessert"
 version = "0.43.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "637aa74d6510e43019c8bb764fce5e999d7cdc1d068a9b993bb2f2325fb533af"
+source = "git+https://github.com/facet-rs/facet?branch=main#48914ef0c7a7f6b0425cbc0cf728a3251976e0fc"
 dependencies = [
  "facet-core",
  "facet-reflect",
@@ -609,8 +606,7 @@ dependencies = [
 [[package]]
 name = "facet-format"
 version = "0.43.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0ae2f526d1c4797fffe1e41ccb53104473f947b1f146d0e91a7290658078e22b"
+source = "git+https://github.com/facet-rs/facet?branch=main#48914ef0c7a7f6b0425cbc0cf728a3251976e0fc"
 dependencies = [
  "facet-core",
  "facet-dessert",
@@ -622,8 +618,7 @@ dependencies = [
 [[package]]
 name = "facet-json"
 version = "0.43.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e761fe27fd484eeef93c996d2dfeadfc04f84c8191ea7f061be864da821778f7"
+source = "git+https://github.com/facet-rs/facet?branch=main#48914ef0c7a7f6b0425cbc0cf728a3251976e0fc"
 dependencies = [
  "facet",
  "facet-core",
@@ -635,8 +630,7 @@ dependencies = [
 [[package]]
 name = "facet-macro-parse"
 version = "0.43.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "83ea29147986d0e184600cec533c41d6065c3c3d4b5b5745a8403494ca216b09"
+source = "git+https://github.com/facet-rs/facet?branch=main#48914ef0c7a7f6b0425cbc0cf728a3251976e0fc"
 dependencies = [
  "facet-macro-types",
  "proc-macro2",
@@ -646,8 +640,7 @@ dependencies = [
 [[package]]
 name = "facet-macro-types"
 version = "0.43.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "31b0035cf41c0d4eeee82effc9161512d216d1378dd89c4d8721258429e38597"
+source = "git+https://github.com/facet-rs/facet?branch=main#48914ef0c7a7f6b0425cbc0cf728a3251976e0fc"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -657,8 +650,7 @@ dependencies = [
 [[package]]
 name = "facet-macros"
 version = "0.43.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "77a784f2fa36d3165b95639af790249dee0d8efdef7d53f9417cace91697e2e3"
+source = "git+https://github.com/facet-rs/facet?branch=main#48914ef0c7a7f6b0425cbc0cf728a3251976e0fc"
 dependencies = [
  "facet-macros-impl",
 ]
@@ -666,8 +658,7 @@ dependencies = [
 [[package]]
 name = "facet-macros-impl"
 version = "0.43.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cf8f45c6380398bf74e59b97a20012de571502c609e580d84579d1140e491c1c"
+source = "git+https://github.com/facet-rs/facet?branch=main#48914ef0c7a7f6b0425cbc0cf728a3251976e0fc"
 dependencies = [
  "facet-macro-parse",
  "facet-macro-types",
@@ -680,8 +671,7 @@ dependencies = [
 [[package]]
 name = "facet-path"
 version = "0.43.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bfbb5bdb426428005af0658b46e0c8d73c42b73c59a2a9e47cb52fa2f4dbc8b8"
+source = "git+https://github.com/facet-rs/facet?branch=main#48914ef0c7a7f6b0425cbc0cf728a3251976e0fc"
 dependencies = [
  "facet-core",
 ]
@@ -689,17 +679,19 @@ dependencies = [
 [[package]]
 name = "facet-reflect"
 version = "0.43.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4418c9fceaac9adcd055cc3732954d79b5d67ef04fb855dd219f2b314ba26cff"
+source = "git+https://github.com/facet-rs/facet?branch=main#48914ef0c7a7f6b0425cbc0cf728a3251976e0fc"
 dependencies = [
  "facet-core",
+ "facet-path",
+ "hashbrown",
+ "regex",
+ "smallvec 2.0.0-alpha.12",
 ]
 
 [[package]]
 name = "facet-solver"
 version = "0.43.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e658ff4822b1ece03ab0cfeee867d41e7483b593be63345468806994d6fcd942"
+source = "git+https://github.com/facet-rs/facet?branch=main#48914ef0c7a7f6b0425cbc0cf728a3251976e0fc"
 dependencies = [
  "facet-core",
  "facet-reflect",
@@ -708,8 +700,7 @@ dependencies = [
 [[package]]
 name = "facet-urlencoded"
 version = "0.43.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6e29dc21f3b307c87a900126fd3faea3ad5ac28f826c3a9039f69fa56a8f6240"
+source = "git+https://github.com/facet-rs/facet?branch=main#48914ef0c7a7f6b0425cbc0cf728a3251976e0fc"
 dependencies = [
  "facet-core",
  "facet-reflect",
@@ -907,6 +898,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "841d1cc9bed7f9236f321df977030373f4a4163ae1a7dbfe1a51a2c1a51d9100"
 dependencies = [
  "allocator-api2",
+ "equivalent",
+ "foldhash 0.2.0",
 ]
 
 [[package]]
@@ -968,7 +961,7 @@ dependencies = [
  "icu_normalizer_data",
  "icu_properties",
  "icu_provider",
- "smallvec",
+ "smallvec 1.15.1",
  "zerovec",
 ]
 
@@ -1033,7 +1026,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3b0875f23caa03898994f6ddc501886a45c7d3d62d04d2d90788d47be1b1e4de"
 dependencies = [
  "idna_adapter",
- "smallvec",
+ "smallvec 1.15.1",
  "utf8_iter",
 ]
 
@@ -1252,7 +1245,7 @@ dependencies = [
  "cfg-if",
  "libc",
  "redox_syscall",
- "smallvec",
+ "smallvec 1.15.1",
  "windows-link",
 ]
 
@@ -1598,6 +1591,12 @@ name = "smallvec"
 version = "1.15.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "67b1b7a3b5fe4f1376887184045fcf45c69e92af734b7aaddc05fb777b6fbd03"
+
+[[package]]
+name = "smallvec"
+version = "2.0.0-alpha.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ef784004ca8777809dcdad6ac37629f0a97caee4c685fcea805278d81dd8b857"
 
 [[package]]
 name = "socket2"

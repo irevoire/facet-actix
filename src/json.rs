@@ -15,7 +15,7 @@ use actix_web::{
 };
 use facet::Facet;
 use facet_format::SerializeError;
-use facet_json::{DeserializeError, JsonError, JsonSerializeError};
+use facet_json::{DeserializeError, JsonSerializeError};
 
 #[derive(Debug, facet::Facet)]
 #[facet(transparent)]
@@ -53,7 +53,7 @@ pub enum JsonRejection {
     /// Failed to read the request body.
     Body(actix_web::Error),
     /// Failed to deserialize the JSON data.
-    Deserialize(DeserializeError<JsonError>),
+    Deserialize(DeserializeError),
     /// Missing `Content-Type: application/json` header.
     MissingContentType,
     /// Invalid `Content-Type` header (not application/json).

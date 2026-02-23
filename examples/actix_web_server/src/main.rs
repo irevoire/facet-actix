@@ -2,6 +2,12 @@ use actix_web::{web, App, HttpServer};
 use facet::Facet;
 
 #[derive(Debug, Facet)]
+struct Query2 {
+    #[facet(default = Range { min: 2, max: 4 })]
+    range: Range,
+}
+
+#[derive(Debug, Facet)]
 #[facet(deny_unknown_fields)]
 struct Query {
     name: String,
